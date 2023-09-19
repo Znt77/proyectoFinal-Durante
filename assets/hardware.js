@@ -119,3 +119,5 @@ const verCarritoButton = document.getElementById("verCarrito");
 verCarritoButton.addEventListener("click", () => {
     mostrarCarrito();
 });
+
+// Realmente no se me ocurre qué api ponerle
