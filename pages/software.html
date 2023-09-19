@@ -53,233 +53,262 @@
         </nav>
     </header>
     <main>
-        <div class="container-fluid productos">
-            <div class="row row-cols-1 row-cols-sm-3 row-cols-md-5 g-3">
-                <div class="col">
-                    <ul class="lista-centrada filtro">
-                        <li>
-                            <h1 class="titulo__importante--software">Software</h1>
-                        </li>
-                        <li class="footer__item--redes escalar"><a href="#" class="filtro__btn--windows"><i
-                                    class="bi bi-windows"></i> Windows</a></li>
-                        <li class="footer__item--redes escalar"><a href="#" class="filtro__btn--linux"><i
-                                    class="bi bi-ubuntu"></i> Linux</a></li>
-                        <li class="footer__item--redes escalar"><a href="#" class="filtro__btn--programas"><i
-                                    class="bi bi-window"></i> Programas</a></li>
-                    </ul>
+        <div class="container mt-4">
+            <h2>Agregar Nuevo Producto</h2>
+            <form id="formularioProducto">
+                <div class="form-group">
+                    <label for="nombre">Nombre del Producto:</label>
+                    <input type="text" class="form-control" id="nombre" name="nombre" required>
                 </div>
-                <div class="col">
-                    <div class="card shadow-sm text-bg-dark">
-                        <img src="../img/w7.jpg" class="escalar">
-                        <div class="card-body">
-                            <h5 class="card-title">Windows 7</h5>
-                            <p class="card-text">$ 5.000</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <a href="#" class="btn btn-primary">Detalles</a>
+
+                <div class="form-group">
+                    <label for="precio">Precio:</label>
+                    <input type="number" class="form-control" id="precio" name="precio" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="imagen">Seleccionar Imagen:</label>
+                    <input type="file" class="form-control-file" id="imagen" name="imagen" accept="image/*" required>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Agregar Producto</button>
+            </form>
+            <button id="verCarrito" class="btn btn-primary">Ver Carrito</button>
+
+            <div class="carrito">
+                <div class="row row-cols-1 row-cols-sm-3 row-cols-md-5">
+
+                </div>
+            </div>
+
+            <div class="container-fluid productos">
+                <div class="row row-cols-1 row-cols-sm-3 row-cols-md-5 g-3">
+                    <div class="col">
+                        <ul class="lista-centrada filtro">
+                            <li>
+                                <h1 class="titulo__importante--software">Software</h1>
+                            </li>
+                            <li class="footer__item--redes escalar"><a href="#" class="filtro__btn--windows"><i
+                                        class="bi bi-windows"></i> Windows</a></li>
+                            <li class="footer__item--redes escalar"><a href="#" class="filtro__btn--linux"><i
+                                        class="bi bi-ubuntu"></i> Linux</a></li>
+                            <li class="footer__item--redes escalar"><a href="#" class="filtro__btn--programas"><i
+                                        class="bi bi-window"></i> Programas</a></li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm text-bg-dark">
+                            <img src="../img/w7.jpg" class="escalar">
+                            <div class="card-body">
+                                <h5 class="card-title">Windows 7</h5>
+                                <p class="card-text">$ 5.000</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="#" class="btn btn-primary">Detalles</a>
+                                    </div>
+                                    <a href="#" class="btn btn-success">Agregar</a>
                                 </div>
-                                <a href="#" class="btn btn-success">Agregar</a>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col">
-                    <div class="card shadow-sm text-bg-dark">
-                        <img src="../img/w7home.jpg" class="escalar">
-                        <div class="card-body">
-                            <h5 class="card-title">Windows 7 home</h5>
-                            <p class="card-text">$ 5.000</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <a href="#" class="btn btn-primary">Detalles</a>
+                    <div class="col">
+                        <div class="card shadow-sm text-bg-dark">
+                            <img src="../img/w7home.jpg" class="escalar">
+                            <div class="card-body">
+                                <h5 class="card-title">Windows 7 home</h5>
+                                <p class="card-text">$ 5.000</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="#" class="btn btn-primary">Detalles</a>
+                                    </div>
+                                    <a href="#" class="btn btn-success">Agregar</a>
                                 </div>
-                                <a href="#" class="btn btn-success">Agregar</a>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col">
-                    <div class="card shadow-sm text-bg-dark">
-                        <img src="../img/w7pro.jpg" class="escalar">
-                        <div class="card-body">
-                            <h5 class="card-title">Windows 7 pro</h5>
-                            <p class="card-text">$ 5.000</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <a href="#" class="btn btn-primary">Detalles</a>
+                    <div class="col">
+                        <div class="card shadow-sm text-bg-dark">
+                            <img src="../img/w7pro.jpg" class="escalar">
+                            <div class="card-body">
+                                <h5 class="card-title">Windows 7 pro</h5>
+                                <p class="card-text">$ 5.000</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="#" class="btn btn-primary">Detalles</a>
+                                    </div>
+                                    <a href="#" class="btn btn-success">Agregar</a>
                                 </div>
-                                <a href="#" class="btn btn-success">Agregar</a>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col">
-                    <div class="card shadow-sm text-bg-dark">
-                        <img src="../img/w10pro.webp" class="escalar">
-                        <div class="card-body">
-                            <h5 class="card-title">Windows 10 pro</h5>
-                            <p class="card-text">$ 5.000</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <a href="#" class="btn btn-primary">Detalles</a>
+                    <div class="col">
+                        <div class="card shadow-sm text-bg-dark">
+                            <img src="../img/w10pro.webp" class="escalar">
+                            <div class="card-body">
+                                <h5 class="card-title">Windows 10 pro</h5>
+                                <p class="card-text">$ 5.000</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="#" class="btn btn-primary">Detalles</a>
+                                    </div>
+                                    <a href="#" class="btn btn-success">Agregar</a>
                                 </div>
-                                <a href="#" class="btn btn-success">Agregar</a>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col">
-                    <div class="card shadow-sm text-bg-dark">
-                        <img src="../img/w11.png" class="escalar">
-                        <div class="card-body">
-                            <h5 class="card-title">Windows 11 home</h5>
-                            <p class="card-text">$ 5.000</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <a href="#" class="btn btn-primary">Detalles</a>
+                    <div class="col">
+                        <div class="card shadow-sm text-bg-dark">
+                            <img src="../img/w11.png" class="escalar">
+                            <div class="card-body">
+                                <h5 class="card-title">Windows 11 home</h5>
+                                <p class="card-text">$ 5.000</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="#" class="btn btn-primary">Detalles</a>
+                                    </div>
+                                    <a href="#" class="btn btn-success">Agregar</a>
                                 </div>
-                                <a href="#" class="btn btn-success">Agregar</a>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col">
-                    <div class="card shadow-sm text-bg-dark">
-                        <img src="../img/w11pro.webp" class="escalar">
-                        <div class="card-body">
-                            <h5 class="card-title">Windows 11 pro</h5>
-                            <p class="card-text">$ 5.000</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <a href="#" class="btn btn-primary">Detalles</a>
+                    <div class="col">
+                        <div class="card shadow-sm text-bg-dark">
+                            <img src="../img/w11pro.webp" class="escalar">
+                            <div class="card-body">
+                                <h5 class="card-title">Windows 11 pro</h5>
+                                <p class="card-text">$ 5.000</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="#" class="btn btn-primary">Detalles</a>
+                                    </div>
+                                    <a href="#" class="btn btn-success">Agregar</a>
                                 </div>
-                                <a href="#" class="btn btn-success">Agregar</a>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col">
-                    <div class="card shadow-sm text-bg-dark">
-                        <img src="../img/windows-logo.jpg" class="escalar">
-                        <div class="card-body">
-                            <h5 class="card-title">Windows 10</h5>
-                            <p class="card-text">$ 5.000</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <a href="#" class="btn btn-primary">Detalles</a>
+                    <div class="col">
+                        <div class="card shadow-sm text-bg-dark">
+                            <img src="../img/windows-logo.jpg" class="escalar">
+                            <div class="card-body">
+                                <h5 class="card-title">Windows 10</h5>
+                                <p class="card-text">$ 5.000</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="#" class="btn btn-primary">Detalles</a>
+                                    </div>
+                                    <a href="#" class="btn btn-success">Agregar</a>
                                 </div>
-                                <a href="#" class="btn btn-success">Agregar</a>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col">
-                    <div class="card shadow-sm text-bg-dark">
-                        <img src="../img/vegas.png" class="escalar">
-                        <div class="card-body">
-                            <h5 class="card-title">Sony vegas pro</h5>
-                            <p class="card-text">$ 5.000</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <a href="#" class="btn btn-primary">Detalles</a>
+                    <div class="col">
+                        <div class="card shadow-sm text-bg-dark">
+                            <img src="../img/vegas.png" class="escalar">
+                            <div class="card-body">
+                                <h5 class="card-title">Sony vegas pro</h5>
+                                <p class="card-text">$ 5.000</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="#" class="btn btn-primary">Detalles</a>
+                                    </div>
+                                    <a href="#" class="btn btn-success">Agregar</a>
                                 </div>
-                                <a href="#" class="btn btn-success">Agregar</a>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col">
-                    <div class="card shadow-sm text-bg-dark">
-                        <img src="../img/adobe-logos.jpg" class="escalar">
-                        <div class="card-body">
-                            <h5 class="card-title">Licencia de adobe</h5>
-                            <p class="card-text">$ 5.000</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <a href="#" class="btn btn-primary">Detalles</a>
+                    <div class="col">
+                        <div class="card shadow-sm text-bg-dark">
+                            <img src="../img/adobe-logos.jpg" class="escalar">
+                            <div class="card-body">
+                                <h5 class="card-title">Licencia de adobe</h5>
+                                <p class="card-text">$ 5.000</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="#" class="btn btn-primary">Detalles</a>
+                                    </div>
+                                    <a href="#" class="btn btn-success">Agregar</a>
                                 </div>
-                                <a href="#" class="btn btn-success">Agregar</a>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col">
-                    <div class="card shadow-sm text-bg-dark">
-                        <img src="../img/office.png" class="escalar">
-                        <div class="card-body">
-                            <h5 class="card-title">Licencia de Microsoft office</h5>
-                            <p class="card-text">$ 5.000</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <a href="#" class="btn btn-primary">Detalles</a>
+                    <div class="col">
+                        <div class="card shadow-sm text-bg-dark">
+                            <img src="../img/office.png" class="escalar">
+                            <div class="card-body">
+                                <h5 class="card-title">Licencia de Microsoft office</h5>
+                                <p class="card-text">$ 5.000</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="#" class="btn btn-primary">Detalles</a>
+                                    </div>
+                                    <a href="#" class="btn btn-success">Agregar</a>
                                 </div>
-                                <a href="#" class="btn btn-success">Agregar</a>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col">
-                    <div class="card shadow-sm text-bg-dark">
-                        <img src="../img/ubuntu-linux.png" class="escalar">
-                        <div class="card-body">
-                            <h5 class="card-title">Linux ubuntu</h5>
-                            <p class="card-text">$ 5.000</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <a href="#" class="btn btn-primary">Detalles</a>
+                    <div class="col">
+                        <div class="card shadow-sm text-bg-dark">
+                            <img src="../img/ubuntu-linux.png" class="escalar">
+                            <div class="card-body">
+                                <h5 class="card-title">Linux ubuntu</h5>
+                                <p class="card-text">$ 5.000</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="#" class="btn btn-primary">Detalles</a>
+                                    </div>
+                                    <a href="#" class="btn btn-success">Agregar</a>
                                 </div>
-                                <a href="#" class="btn btn-success">Agregar</a>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col">
-                    <div class="card shadow-sm text-bg-dark">
-                        <img src="../img/windows-xp.png" class="escalar">
-                        <div class="card-body">
-                            <h5 class="card-title">Windows XP</h5>
-                            <p class="card-text">$ 5.000</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <a href="#" class="btn btn-primary">Detalles</a>
+                    <div class="col">
+                        <div class="card shadow-sm text-bg-dark">
+                            <img src="../img/windows-xp.png" class="escalar">
+                            <div class="card-body">
+                                <h5 class="card-title">Windows XP</h5>
+                                <p class="card-text">$ 5.000</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="#" class="btn btn-primary">Detalles</a>
+                                    </div>
+                                    <a href="#" class="btn btn-success">Agregar</a>
                                 </div>
-                                <a href="#" class="btn btn-success">Agregar</a>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col">
-                    <div class="card shadow-sm text-bg-dark">
-                        <img src="../img/windows-96.jpg" class="escalar">
-                        <div class="card-body">
-                            <h5 class="card-title">Windows 96</h5>
-                            <p class="card-text">$ 5.000</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <a href="#" class="btn btn-primary">Detalles</a>
+                    <div class="col">
+                        <div class="card shadow-sm text-bg-dark">
+                            <img src="../img/windows-96.jpg" class="escalar">
+                            <div class="card-body">
+                                <h5 class="card-title">Windows 96</h5>
+                                <p class="card-text">$ 5.000</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="#" class="btn btn-primary">Detalles</a>
+                                    </div>
+                                    <a href="#" class="btn btn-success">Agregar</a>
                                 </div>
-                                <a href="#" class="btn btn-success">Agregar</a>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col">
-                    <div class="card shadow-sm text-bg-dark">
-                        <img src="../img/filmora.png" class="escalar">
-                        <div class="card-body">
-                            <h5 class="card-title">Filmora</h5>
-                            <p class="card-text">$ 5.000</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <a href="#" class="btn btn-primary">Detalles</a>
+                    <div class="col">
+                        <div class="card shadow-sm text-bg-dark">
+                            <img src="../img/filmora.png" class="escalar">
+                            <div class="card-body">
+                                <h5 class="card-title">Filmora</h5>
+                                <p class="card-text">$ 5.000</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="#" class="btn btn-primary">Detalles</a>
+                                    </div>
+                                    <a href="#" class="btn btn-success">Agregar</a>
                                 </div>
-                                <a href="#" class="btn btn-success">Agregar</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+            <script src="../assets/hardware.js"></script>
     </main>
     <!-- ===============NAVBAR BOTTOM=============== -->
     <footer class="text-bg-dark p-3 footer">
